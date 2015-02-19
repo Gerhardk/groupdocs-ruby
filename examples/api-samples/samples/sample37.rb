@@ -116,7 +116,7 @@ post '/sample-37-how-to-use-storage-api-to-create-and-upload-envelop-to-groupdoc
     #Create envelope using user id and entered by user name
     envelope = GroupDocs::Signature::Envelope.new
     envelope.name = file.name
-    envelope.email_subject = 'Sing this!'
+    envelope.email_subject = 'Sign this!'
     envelope.create!({})
 
     #Add uploaded document to envelope
