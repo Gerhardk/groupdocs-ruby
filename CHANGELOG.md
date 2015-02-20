@@ -1,3 +1,6 @@
+## v1.5.7.1
+* Set the timeout and open_timeout for the RestClient
+
 ## v1.5.3
 
 **Changes**
