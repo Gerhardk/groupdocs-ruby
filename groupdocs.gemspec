@@ -15,10 +15,11 @@ Gem::Specification.new do |s|
   s.executables  = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_path = 'lib'
 
-  s.add_runtime_dependency 'rest-client'   , '~> 1.6'
-  s.add_runtime_dependency 'json'          , '~> 1.7'
+  s.add_runtime_dependency 'rest-client'   , '~> 1.6.7'
+  s.add_runtime_dependency 'json'          , '~> 1.7.7'
   s.add_runtime_dependency 'mime-types'    , '~> 1.19'
-  s.add_runtime_dependency 'activesupport' , '>= 3.0'
+  s.add_runtime_dependency 'activesupport' , '= 3.0.20'
+  s.add_runtime_dependency 'i18n', '0.5.0'
 
   s.add_development_dependency 'rspec'    , '~> 2.12'
   s.add_development_dependency 'fuubar'   , '~> 1.1'
