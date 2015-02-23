@@ -40,7 +40,7 @@ module GroupDocs
         yield @options if block_given?
         @options[:access] ||= {}
         @options[:sign] = true if @options[:sign].nil?
-        @resource = RestClient::Resource.new(GroupDocs.api_server, timeout: 90, open_timeout: 90 )
+        @resource = RestClient::Resource.new(GroupDocs.api_server, timeout: 60, open_timeout: 60 )
       end
 
       #
